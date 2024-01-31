@@ -14,7 +14,7 @@ export let theme_ =
         
     },
 
-    darck: {
+    dark: {
         token: {
             fontFamily: 'Poppins',
             fontSize: 16,
