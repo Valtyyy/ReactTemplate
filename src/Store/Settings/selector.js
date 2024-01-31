@@ -6,6 +6,6 @@ const selectSettings = (state) => state.settings;
 export const themeModeSelector = createSelector(
     [selectSettings],
     (e) => {
-        return e.themeMode;
+        return e.theme;
     }
 )
