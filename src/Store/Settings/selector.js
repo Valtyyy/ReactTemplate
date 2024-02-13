@@ -9,3 +9,10 @@ export const themeModeSelector = createSelector(
         return e.theme;
     }
 )
+
+export const isMobileSelector = createSelector(
+    [selectSettings],
+    (e) => {
+        return e.isMobile
+    }
+)
