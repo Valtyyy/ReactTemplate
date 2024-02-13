@@ -1,6 +1,7 @@
 
 const INITIAL_STATE = {
-    theme: 'light'
+    theme: 'light',
+    isMobile: false
 }
 
 const Reducer = (state = INITIAL_STATE, action) => {
@@ -13,6 +14,13 @@ const Reducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 theme: state.theme == 'light' ? 'dark' : 'light'
+            }
+
+        case 'settings/setIsMobile':
+
+            return {
+                ...state,
+                isMobile: payload.state
             }
 
         default:

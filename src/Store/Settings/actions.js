@@ -7,5 +7,13 @@ export const SettingsActions = {
         dispatch({
             type: 'settings/toggleTheme'
         })
+    },
+
+    SetIsMobile: ({state}) => (dispatch) => {
+
+        dispatch({
+            type: 'settings/setIsMobile',
+            payload: { state }
+        })
     }
 }
